@@ -80,3 +80,11 @@ public:
         cout << "Final Position: (" << adventurer.x << ", " << adventurer.y << ")" << endl;
     }
 };
+int main() {
+    Game game(5, 5, 0, 0, 10);
+    game.addTreasure(2, 2, 50);
+    game.addTrap(1, 1, 3);
+    string moves = "RRDDLUUX";
+    game.processMoves(moves);
+    return 0;
+}
